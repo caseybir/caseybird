@@ -3,129 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Casey Birdoff | Portfolio</title>
+    <title>Casey Birdoff | Personal Site</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <div class="container">
-        <p class="eyebrow">Student · Analyst · Educator</p>
-        <h1>Casey Birdoff</h1>
-        <p class="subtitle">
-          Mathematics student at Tulane University with hands-on experience in
-          market research, business development, tutoring, and leadership.
-        </p>
-        <div class="contact-row">
-          <a href="tel:+12019784797">(201) 978-4797</a>
-          <span>•</span>
-          <a href="mailto:caseybirdoff@gmail.com">caseybirdoff@gmail.com</a>
-        </div>
+    <div class="bg-glow glow-1" aria-hidden="true"></div>
+    <div class="bg-glow glow-2" aria-hidden="true"></div>
+
+    <header class="hero container">
+      <p class="eyebrow">Casey Birdoff</p>
+      <h1>Math + Strategy + Real-World Execution</h1>
+      <p class="subtitle">
+        Tulane mathematics student blending analytics, business development, and
+        leadership experience across finance, education, and customer-facing roles.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#tabs">Explore profile</a>
+        <a class="btn" href="mailto:caseybirdoff@gmail.com">Email Casey</a>
       </div>
     </header>
 
-    <main class="container">
-      <section>
-        <h2>About</h2>
+    <main class="container" id="tabs">
+      <nav class="tab-list" role="tablist" aria-label="Profile sections">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-tab="about">About</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-tab="education">Education</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-experience" id="tab-experience" data-tab="experience">Experience</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-contact" id="tab-contact" data-tab="contact">Contact</button>
+      </nav>
+
+      <section class="panel active" id="panel-about" role="tabpanel" aria-labelledby="tab-about">
+        <h2>About Casey</h2>
         <p>
-          I’m currently pursuing a Bachelor’s degree in Mathematics at Tulane
-          University (expected May 2027), with a minor in Strategy,
-          Leadership, and Analytics. My background combines quantitative
-          coursework, client-facing experience, and mentoring younger students.
+          Casey is currently pursuing a B.S. in Mathematics at Tulane University
+          (expected May 2027), with a minor in Strategy, Leadership, and Analytics.
+          He enjoys turning data into practical decisions and has spent consecutive
+          summers in New York supporting new business development research.
         </p>
+        <div class="chips">
+          <span>Python</span>
+          <span>Market Research</span>
+          <span>Leadership</span>
+          <span>Tutoring & Mentorship</span>
+          <span>Customer Operations</span>
+        </div>
       </section>
 
-      <section>
+      <section class="panel" id="panel-education" role="tabpanel" aria-labelledby="tab-education" hidden>
         <h2>Education</h2>
-        <article>
-          <h3>Tulane University — New Orleans, LA</h3>
-          <p>Bachelor’s in Mathematics, Minor in Strategy, Leadership, and Analytics</p>
+        <article class="card">
+          <h3>Tulane University, New Orleans, LA</h3>
+          <p class="meta">B.S. Mathematics • Minor in Strategy, Leadership, and Analytics</p>
           <ul>
             <li>Expected graduation: May 2027</li>
-            <li>
-              Study abroad: University of New South Wales, Sydney (Aug 2025 –
-              Dec 2025)
-            </li>
-            <li>
-              Relevant coursework: Calculus I–III, Linear Algebra, Applied
-              Mathematics, Real Analysis I, Discrete Math
-            </li>
-            <li>Programming: Python</li>
+            <li>Study abroad: University of New South Wales, Sydney (Aug 2025 – Dec 2025)</li>
             <li>GPA: 3.4/4.0</li>
+            <li>Coursework: Calculus I–III, Linear Algebra, Applied Math, Real Analysis I, Discrete Math</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Ridgewood High School, Ridgewood, NJ</h3>
+          <p class="meta">Graduated 2023 • GPA 3.7/4.0</p>
+          <ul>
+            <li>Rose Chapter Leader, Junior Varsity Track & Field, DECA</li>
+            <li>Children’s Aid & Family Services involvement</li>
           </ul>
         </article>
       </section>
 
-      <section>
+      <section class="panel" id="panel-experience" role="tabpanel" aria-labelledby="tab-experience" hidden>
         <h2>Experience</h2>
-        <article>
-          <h3>New Business Development Intern — SJI Associates, New York, NY</h3>
-          <p class="meta">May 2025 – August 2025</p>
-          <ul>
-            <li>Returned for a second summer after strong prior performance.</li>
-            <li>
-              Conducted quantitative and strategic research on new business
-              opportunities.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>New Business Development Intern — SJI Associates, New York, NY</h3>
-          <p class="meta">May 2024 – August 2024</p>
-          <ul>
-            <li>Researched opportunities across multiple industries.</li>
-            <li>Compiled and organized background and contact intelligence.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Team Member — Playa Bowls, Ridgewood, NJ</h3>
-          <p class="meta">March 2023 – August 2023</p>
-          <ul>
-            <li>
-              Delivered efficient, accurate customer service in a high-volume
-              environment.
-            </li>
-            <li>Managed point-of-sale transactions and customer orders.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Math Teacher & Tutor — Mathnasium, Glen Rock, NJ</h3>
-          <p class="meta">2018 – 2023</p>
-          <ul>
-            <li>Taught and mentored children ages 5–12.</li>
-            <li>Communicated student progress with families and leadership.</li>
-            <li>Helped students overcome challenges through structured plans.</li>
-          </ul>
-        </article>
+        <div class="timeline">
+          <article class="card">
+            <h3>New Business Development Intern — SJI Associates</h3>
+            <p class="meta">New York, NY • May 2025 – Aug 2025</p>
+            <p>Returned for a second summer to deepen quantitative and strategic research on new business opportunities.</p>
+          </article>
+          <article class="card">
+            <h3>New Business Development Intern — SJI Associates</h3>
+            <p class="meta">New York, NY • May 2024 – Aug 2024</p>
+            <p>Researched opportunities across multiple industries and built background/contact intelligence for outreach.</p>
+          </article>
+          <article class="card">
+            <h3>Math Teacher & Tutor — Mathnasium</h3>
+            <p class="meta">Glen Rock, NJ • 2018 – 2023</p>
+            <p>Taught students ages 5–12, communicated progress with families, and created plans to overcome learning gaps.</p>
+          </article>
+          <article class="card">
+            <h3>Team Member — Playa Bowls</h3>
+            <p class="meta">Ridgewood, NJ • Mar 2023 – Aug 2023</p>
+            <p>Delivered fast, accurate service and handled point-of-sale transactions in a busy environment.</p>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Leadership & Activities</h2>
-        <ul>
-          <li>Vice President, Trash to Treasure (student-led waste reduction initiative)</li>
-          <li>Goldman Sachs 2024 Virtual Insight Series participant</li>
-          <li>Tae Kwon Do — 2nd Degree Black Belt</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Certifications</h2>
-        <ul>
-          <li>Microsoft Office Specialist: Excel Associate (Excel and Excel 2019), issued Nov 2023</li>
-          <li>CPR/AED/First Aid — American Heart Association, issued Jan 2023</li>
-        </ul>
+      <section class="panel" id="panel-contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
+        <h2>Contact & Links</h2>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:caseybirdoff@gmail.com">
+            <h3>Email</h3>
+            <p>caseybirdoff@gmail.com</p>
+          </a>
+          <a class="contact-card" href="tel:+12019784797">
+            <h3>Phone</h3>
+            <p>(201) 978-4797</p>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/caseybirdoff" target="_blank" rel="noreferrer">
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/caseybirdoff</p>
+          </a>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <p>© <span id="year"></span> Casey Birdoff</p>
-      </div>
+    <footer class="container">
+      <p>© <span id="year"></span> Casey Birdoff</p>
     </footer>
 
     <script>
+      const tabs = document.querySelectorAll('.tab');
+      const panels = document.querySelectorAll('.panel');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const current = tab.dataset.tab;
+
+          tabs.forEach((btn) => {
+            const isActive = btn === tab;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-selected', String(isActive));
+          });
+
+          panels.forEach((panel) => {
+            const isActive = panel.id === `panel-${current}`;
+            panel.classList.toggle('active', isActive);
+            panel.hidden = !isActive;
+          });
+        });
+      });
+
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </body>
