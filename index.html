@@ -98,8 +98,13 @@
 
       <section class="panel" id="panel-contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
         <h2>Contact & Links</h2>
+        <div class="contact-actions">
+          <button class="btn primary" type="button" id="email-launch">Open email app</button>
+          <button class="btn" type="button" id="copy-email">Copy email</button>
+          <p id="email-feedback" class="feedback" aria-live="polite"></p>
+        </div>
         <div class="contact-grid">
-          <a class="contact-card" href="mailto:caseybirdoff@gmail.com">
+          <a class="contact-card" href="mailto:caseybirdoff@gmail.com" id="email-link">
             <h3>Email</h3>
             <p>caseybirdoff@gmail.com</p>
           </a>
@@ -139,6 +144,24 @@
             panel.hidden = !isActive;
           });
         });
+      });
+
+      const email = 'caseybirdoff@gmail.com';
+      const copyBtn = document.getElementById('copy-email');
+      const launchBtn = document.getElementById('email-launch');
+      const emailFeedback = document.getElementById('email-feedback');
+
+      launchBtn?.addEventListener('click', () => {
+        window.location.href = `mailto:${email}`;
+      });
+
+      copyBtn?.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(email);
+          emailFeedback.textContent = 'Email copied: caseybirdoff@gmail.com';
+        } catch {
+          emailFeedback.textContent = 'Could not copy automatically. Use caseybirdoff@gmail.com';
+        }
       });
 
       document.getElementById('year').textContent = new Date().getFullYear();

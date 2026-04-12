@@ -178,6 +178,20 @@ h2 {
   font-size: 0.9rem;
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.feedback {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
