@@ -219,3 +219,67 @@ footer {
   text-align: center;
   padding: 0.5rem 0 2rem;
 }
+
+.stats-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.stats-grid div {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.95rem;
+}
+
+.stats-grid strong {
+  display: block;
+  color: var(--accent-2);
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.stats-grid span,
+.card-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  transition: 0.2s ease;
+}
+
+.project-card.featured {
+  background: linear-gradient(145deg, rgba(110, 124, 255, 0.18), rgba(38, 208, 206, 0.08));
+}
+
+.project-card:hover {
+  border-color: #4f5b96;
+  transform: translateY(-2px);
+}
+
+.project-label {
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+}
+
+.project-link {
+  color: var(--accent-2);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}

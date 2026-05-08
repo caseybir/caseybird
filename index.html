@@ -28,23 +28,39 @@
         <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-about" id="tab-about" data-tab="about">About</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-tab="education">Education</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="panel-experience" id="tab-experience" data-tab="experience">Experience</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-projects" id="tab-projects" data-tab="projects">Projects</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="panel-contact" id="tab-contact" data-tab="contact">Contact</button>
       </nav>
 
       <section class="panel active" id="panel-about" role="tabpanel" aria-labelledby="tab-about">
         <h2>About Casey</h2>
         <p>
-          Casey is currently pursuing a B.S. in Mathematics at Tulane University
-          (expected May 2027), with a minor in Strategy, Leadership, and Analytics.
-          He enjoys turning data into practical decisions and has spent consecutive
-          summers in New York supporting new business development research.
+          Casey is a Tulane mathematics student in the New York City Metropolitan
+          Area focused on analytics, strategy, and practical product-building. His
+          work spans business development research, student sustainability
+          leadership, education, and web app development.
         </p>
+        <div class="stats-grid">
+          <div>
+            <strong>2K+</strong>
+            <span>LinkedIn followers</span>
+          </div>
+          <div>
+            <strong>500+</strong>
+            <span>LinkedIn connections</span>
+          </div>
+          <div>
+            <strong>2027</strong>
+            <span>Expected Tulane graduation</span>
+          </div>
+        </div>
         <div class="chips">
           <span>Python</span>
           <span>Market Research</span>
           <span>Leadership</span>
           <span>Tutoring & Mentorship</span>
           <span>Customer Operations</span>
+          <span>Web Apps</span>
         </div>
       </section>
 
@@ -57,6 +73,7 @@
             <li>Expected graduation: May 2027</li>
             <li>Study abroad: University of New South Wales, Sydney (Aug 2025 – Dec 2025)</li>
             <li>GPA: 3.4/4.0</li>
+            <li>Activities: Trash to Treasure Vice President, Women in Business</li>
             <li>Coursework: Calculus I–III, Linear Algebra, Applied Math, Real Analysis I, Discrete Math</li>
           </ul>
         </article>
@@ -66,6 +83,13 @@
           <ul>
             <li>Rose Chapter Leader, Junior Varsity Track & Field, DECA</li>
             <li>Children’s Aid & Family Services involvement</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Licenses & Certifications</h3>
+          <ul>
+            <li>Microsoft Office Specialist: Excel Associate (Excel and Excel 2019), Microsoft — issued Nov 2023, expires Jan 2034</li>
+            <li>CPR/AED/First Aid, American Heart Association — issued Jan 2023, expires Jan 2034</li>
           </ul>
         </article>
       </section>
@@ -96,6 +120,31 @@
         </div>
       </section>
 
+      <section class="panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" hidden>
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <p class="project-label">Group Project</p>
+            <h3>Meal Mate</h3>
+            <p>
+              Built with a team, Meal Mate helps college students eat smarter,
+              reduce food waste, save money, browse recipes, generate shopping
+              lists, and track healthy habits.
+            </p>
+            <a class="project-link" href="https://jordieblock-hub.github.io/meal-mate/index.html" target="_blank" rel="noreferrer">Visit Meal Mate</a>
+          </article>
+          <article class="project-card">
+            <p class="project-label">Solo Project</p>
+            <h3>StudyFlow</h3>
+            <p>
+              Independently created and deployed a study productivity web app,
+              showing initiative across ideation, build, deployment, and iteration.
+            </p>
+            <a class="project-link" href="https://studyflow-1050705205563.us-east1.run.app/" target="_blank" rel="noreferrer">Visit StudyFlow</a>
+          </article>
+        </div>
+      </section>
+
       <section class="panel" id="panel-contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
         <h2>Contact & Links</h2>
         <div class="contact-actions">
@@ -112,9 +161,10 @@
             <h3>Phone</h3>
             <p>(201) 978-4797</p>
           </a>
-          <a class="contact-card" href="https://www.linkedin.com/in/caseybirdoff" target="_blank" rel="noreferrer">
+          <a class="contact-card" href="https://www.linkedin.com/in/caseybirdoff/" target="_blank" rel="noreferrer">
             <h3>LinkedIn</h3>
             <p>linkedin.com/in/caseybirdoff</p>
+            <span class="card-note">2K followers • 500+ connections</span>
           </a>
         </div>
       </section>

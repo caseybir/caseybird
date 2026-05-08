@@ -1,6 +1,5 @@
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
-.env*
-!.env.example
+# Local screenshot/test artifacts
+caseybird-portfolio.png
+screenshots/
+playwright-report/
+test-results/
